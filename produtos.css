@@ -1,0 +1,94 @@
+header{
+    background: #BBBBBB;
+    padding: 20px;
+    /*espaçamento interno dentro do cabeçalho, isso é pra que as coisas não encostem na margem, 
+    20 px é o espaço entre cabeçalho e as margens*/
+}
+.caixa{
+    position:relative;/*o posicionamento da classe levanta*/
+    width: 940px;
+    margin: 0 auto;
+    /*espaçamento da margem pra cima e pra baixo será zero e automático/ centralizado com o "auto", 
+    alinha a div ao centro*/
+
+
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+/*alterará tosos os itens da navegação dentro da tag ul (observe início e fim da <nav> no html)
+usando o display inline, os links q antes estavam na vertical, ficarão em linha, na horizontal
+para aumentar o espaçamento entre o menu, deve ser feito no item e não no link, pq o item é o q está o 
+está um um do lado do outro, e queremos que a separação entre os itens seja maior, então é usado
+margin: 0 0 0 15px;
+  */
+
+nav a{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+/*text-transform: uppercase transformará as palavras/ links dentro da tag nav em maiúsculas;
+font-weight: bold - deixará as letras em negrito
+font-size: 22px - alterará o tamanho da fonte
+text-decoration: none - até inserir essa configuração, o texto estava com um sublinhando, 
+aplicando none ele fica sem nenhum;
+
+*/
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+    /*padding para aumentar o espaçamento interno e separar o conteúdo dos produtos com o cabeçalho, 
+    aumenta o tamanho do conteúdo*/
+
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    /*ou pra se falar de borda pode deixar só a seguinte declaração border: 2px solid #000000*/
+}
+/*display inline block deixa os itens da lista em forma de linha e em bloco, um do lado do outro mesma
+linha
+quanto a distribuição dos itens, nesse caso são tres itens, o ideal seria 1/3 para cada, assim, reserva-se 
+para cada um 30% -> width 30%
+vertical-align: top; para orientar os blocos com a linha de cima*
+margin para descolar um elemento, um quadro do outro
+box-sizing: border-box para deixar a largura definitiva em no caso 30%;
+border-radius para arredondar os cantos da borda
+*/
+
+.produtos h2 {
+    font-size: bold;
+    font-size: 30px;
+}
+/*.produtos h2 para editar os títulos de cada bloco*/
+
+.produto-descricao{
+    font-size: 18px;
+}
+.produto-preco {
+    font-size: bold;
+    font-size: 22px;
+    margin-top: 10px;
+}
+/*para desgrudar o preço da descrição usou-se o margin-top*/

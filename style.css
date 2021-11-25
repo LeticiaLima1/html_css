@@ -1,0 +1,56 @@
+body {
+    /*aplica a formatação a todo o corpo, body*/
+}
+
+#banner {
+    width: 100%;
+}
+
+.principal{
+    background: #CCCCCC;
+    padding: 30px; /*padding é para espaçamento*/
+}
+
+.tituloprincipal {
+    padding-left: 20px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+#missao{
+    font-size: 20px;
+}
+/* quando é identificador (id) usamos a tralha (#)*/
+
+em strong {
+    color: #FF1250;
+}
+
+.itens{
+    font-style: italic;
+}
+/* quando é classe (class) usamos o ponto(.)*/
+
+.beneficios{
+    background: #FFFFFF;
+    padding: 20px;
+}
+/*background é para fundo*/
+
+.titulo-centralizado {
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagembeneficios {
+    width: 50%;
+}
